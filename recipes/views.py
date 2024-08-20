@@ -6,37 +6,25 @@ from django.conf import settings
 
 class RecipeList(APIView):
     def get(self, request):
-        # Initialize a session using your AWS credentials
-        session = boto3.Session(
-            aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
-            aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY,
-            region_name=settings.AWS_REGION_NAME
-        )
-        
-        # Get the DynamoDB service resource
-        dynamodb = session.resource('dynamodb')
+        # Create a DynamoDB client without specifying credentials explicitly
+        dynamodb = boto3.resource('dynamodb', region_name=settings.AWS_REGION_NAME)
         
         # Specify the table
         table = dynamodb.Table(settings.DYNAMODB_TABLE_NAME)
         
         # Fetch all data from the table
-        response = table.scan()
-        
-        # Extract items from the response
-        recipes = response.get('Items', [])
-        
-        return Response(recipes)
+        try:
+            response = table.scan()
+            recipes = response.get('Items', [])
+            return Response(recipes)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
     
 class RecipeDetail(APIView):
     def get(self, request, pk):
-        session = boto3.Session(
-            aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
-            aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY,
-            region_name=settings.AWS_REGION_NAME
-        )
-        
-        dynamodb = session.resource('dynamodb')
+        # Create a DynamoDB client without specifying credentials explicitly
+        dynamodb = boto3.resource('dynamodb', region_name=settings.AWS_REGION_NAME)
         table = dynamodb.Table(settings.DYNAMODB_TABLE_NAME)
         
         try:

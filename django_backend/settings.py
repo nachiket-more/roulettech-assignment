@@ -134,7 +134,8 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-AWS_ACCESS_KEY_ID = 'AKIA2UC3BBDDCSE2SKEI'
-AWS_SECRET_ACCESS_KEY = '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'
 AWS_REGION_NAME = 'us-east-1'
 DYNAMODB_TABLE_NAME = 'Recipes'
+
+
+# ALLOWED_HOSTS = ['django-env.eba-gkjwuvhw.us-east-1.elasticbeanstalk.com']
