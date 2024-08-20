@@ -138,4 +138,4 @@ AWS_REGION_NAME = 'us-east-1'
 DYNAMODB_TABLE_NAME = 'Recipes'
 
 
-# ALLOWED_HOSTS = ['django-env.eba-gkjwuvhw.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['recipe-env.eba-gqmppeqx.us-east-1.elasticbeanstalk.com']
