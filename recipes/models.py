@@ -1,6 +1,7 @@
 from django.db import models
 
 class Recipe(models.Model):
+    id = models.AutoField(primary_key=True)  # AutoField generates integers
     cooking_method = models.CharField(max_length=1000)
     cuisine = models.CharField(max_length=1000)
     image = models.CharField(max_length=1000)
@@ -11,4 +12,4 @@ class Recipe(models.Model):
     tags = models.CharField(max_length=1000)
 
     def __str__(self):
-        return self.content
+        return self.recipe_name
