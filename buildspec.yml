@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # Install dependencies for Django
+      pip install -r django_backend/requirements.txt
+
+  build:
+    commands:
+      # Assuming the deployment package should be the entire django_backend folder
+      mkdir -p output
+      cp -r django_backend/* output/
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: output
