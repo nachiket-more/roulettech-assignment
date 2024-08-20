@@ -132,3 +132,9 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+AWS_ACCESS_KEY_ID = 'AKIA2UC3BBDDCSE2SKEI'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_REGION_NAME = 'us-east-1'
+DYNAMODB_TABLE_NAME = 'Recipes'
