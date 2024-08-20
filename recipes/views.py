@@ -9,6 +9,7 @@ class RecipeList(APIView):
         # Create a DynamoDB client without specifying credentials explicitly
         dynamodb = boto3.resource('dynamodb', region_name=settings.AWS_REGION_NAME)
         
+        
         # Specify the table
         table = dynamodb.Table(settings.DYNAMODB_TABLE_NAME)
         
