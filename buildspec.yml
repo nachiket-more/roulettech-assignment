@@ -3,12 +3,20 @@ version: 0.2
 phases:
   install:
     commands:
+      # Print the working directory and list files to debug issues
+      pwd
+      ls -al
       # Install dependencies for Django
       pip install -r django_backend/requirements.txt
 
   build:
     commands:
-      # Assuming the deployment package should be the entire django_backend folder
+      # Print the working directory and list files to ensure paths are correct
+      pwd
+      ls -al
+      # Check if the django_backend folder exists
+      if [ -d "django_backend" ]; then echo "django_backend exists"; else echo "django_backend does not exist"; exit 1; fi
+      # Create output directory and copy contents
       mkdir -p output
       cp -r django_backend/* output/
 
