@@ -135,12 +135,13 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-
 AWS_REGION_NAME = 'us-east-1'
 DYNAMODB_TABLE_NAME = 'Recipes'
 
 
-ALLOWED_HOSTS = ['recipe-django-env.eba-udmkdzi6.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['recipe-django-env.eba-udmkdzi6.us-east-1.elasticbeanstalk.com', 
+    'localhost',
+    '127.0.0.1',]
 
 
 CORS_ALLOW_ALL_ORIGINS = True
