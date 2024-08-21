@@ -1,0 +1,10 @@
+.recipe-container{
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.recipe-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
