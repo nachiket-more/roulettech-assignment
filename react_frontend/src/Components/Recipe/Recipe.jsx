@@ -1,12 +1,15 @@
 import * as React from "react";
 import RecipeCard from '../RecipeCard/RecipeCard'
 import './Recipe.css'
+import { useLocation } from 'react-router-dom';
 
-const App = () => {
+const Recipe = ({data}) => {
+    const location = useLocation();
+    const recipe_id = location.state?.recipe_id;
     const [recipeData, setRecipeData] = React.useState([]);
 
     React.useEffect(() => {
-        fetch('http://recipe-django-env.eba-udmkdzi6.us-east-1.elasticbeanstalk.com/api/recipes/')
+        fetch(`http://recipe-django-env.eba-udmkdzi6.us-east-1.elasticbeanstalk.com/api/recipe/${recipe_id}`)
             .then(response => response.json())
             .then(data => {
                 setRecipeData(data);
@@ -16,18 +19,8 @@ const App = () => {
     }, []);
 
     return (
-        <div className="recipe-container">
-            <div className="recipe-list">
-                {recipeData.length > 0 ? (
-                    recipeData.map((recipe, index) => (
-                        <RecipeCard key={index} data={recipe} />
-                    ))
-                ) : (
-                    <p>No recipe data available.</p>
-                )}
-            </div>
-        </div>
+        <div className="recipe-container"></div>
     );
 }
 
-export default App;
+export default Recipe;

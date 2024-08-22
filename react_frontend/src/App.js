@@ -1,12 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Recipe from './Components/Recipe/Recipe'
+import RecipeList from './Components/RecipeList/RecipeList';
+import Navbar from './Components/Navbar/Navbar';
+import Recipe from './Components/Recipe/Recipe';
 
 function App() {
   return (
-    <div className="App">
-      <Recipe />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<RecipeList />} />
+          <Route path="/recipes/:id" element={<Recipe />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

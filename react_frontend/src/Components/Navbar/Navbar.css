@@ -1,0 +1,12 @@
+.navbar-container{
+    background-color: rebeccapurple;
+    height: fit-content;
+    width: 100vw;
+    text-align: left;
+    padding: 20px 40px;
+}
+.app-title{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
