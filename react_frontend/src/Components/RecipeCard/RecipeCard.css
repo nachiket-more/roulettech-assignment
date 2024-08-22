@@ -6,7 +6,9 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    text-align: center;
 }
+
 .picture{
     height: 150px;
     width: 150px;
@@ -14,7 +16,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 5px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .info-section{
@@ -26,13 +29,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.cuisine, .prep-time{
-    padding: 3px;
-    color: gray;
+    color: var(--secondary-color);
 }
 
 .name{
     font-size: 20px;
+    color: var(--primary-color) !important;
 }

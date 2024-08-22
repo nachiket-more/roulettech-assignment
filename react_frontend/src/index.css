@@ -15,9 +15,21 @@ code {
     monospace;
 }
 
+:root{
+  --primary-color: rgba(114, 63, 95, 1);
+  --secondary-color: #808080;
+  --color3: rgb(237 182 84);
+}
+
+.bolder{
+  font-weight: 900;
+}
 .bold{
-  font-weight: bold;
+  font-weight: 700;
 }
 .medium{
   font-weight: 600;
+}
+.light{
+  font-weight: 400;
 }

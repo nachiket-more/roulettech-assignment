@@ -1,26 +1,33 @@
-import * as React from "react";
+import *  as React from "react";
 import './RecipeCard.css';
 import { useNavigate } from 'react-router-dom';
+import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 
-const RecipeCard = ({ data }) => {
+const RecipeCard = ({ recipe }) => {
     const navigate = useNavigate();
   
+    // use props and states
+    // use <Stack> and <Stack.Item>
     const handleClick = () => {
-        navigate(`/recipes/${data.recipe_name}`, { state: { recipe_id: data.id } });
+        navigate(`/recipe/${recipe.id}`, { state: { recipe_id: recipe.id } });
     };
 
     return (
         <div className="recipe-card" onClick={handleClick}>
-            <div className="picture" style={{ backgroundImage: `url(${data.image})` }}>
+            <div className="picture" style={{ backgroundImage: `url(${recipe.image})` }}>
             </div>
             <div className="info-section">        
                 <div className="info">
-                    {/* <div className="cuisine">{data.cuisine}</div> */}
-                    <div className="prep-time medium">prep time: {data.prep_time}</div>
+                    {/* <div className="cuisine">{recipe.cuisine}</div> */}
+                    <div className="prep-time medium">prep time: {recipe.prep_time}</div>
                 </div>
-                <div className="name bold">{data.recipe_name}</div>
+                <div className="name bold">{recipe.recipe_name}</div>
             </div>
         </div>
+        /**
+         * props, state
+         * 
+         */
     );
 };
 
