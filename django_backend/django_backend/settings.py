@@ -139,9 +139,14 @@ AWS_REGION_NAME = 'us-east-1'
 DYNAMODB_TABLE_NAME = 'Recipes'
 
 
-ALLOWED_HOSTS = ['recipe-django-env.eba-udmkdzi6.us-east-1.elasticbeanstalk.com', 
-    'localhost',
-    '127.0.0.1',]
+# ALLOWED_HOSTS = [
+#     'django-env.eba-ehdx2drn.us-east-1.elasticbeanstalk.com',
+#     '172.31.88.111',
+#     '35.174.91.86', 
+#     'localhost',
+#     '127.0.0.1',
+# ]
+ALLOWED_HOSTS = ['*']
 
 
 CORS_ALLOW_ALL_ORIGINS = True

@@ -3,6 +3,13 @@ from rest_framework.views import APIView
 from rest_framework import status
 import boto3
 from django.conf import settings
+from django.http import HttpResponse
+
+
+
+class Home(APIView):
+    def get(self, request):
+        return HttpResponse("Welcome to the Recipe API")
 
 class RecipeList(APIView):
     def get(self, request):
