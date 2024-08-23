@@ -1,0 +1,77 @@
+[33mcommit 2a6dbbf4e6c3dfd0fd47d375e6eb7ac1f3430295[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 17:57:09 2024 -0700
+
+    added README
+
+[33mcommit 498bf07fb251214dda99119f75db9d0d29184543[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 16:44:23 2024 -0700
+
+    test deployment
+
+[33mcommit f72adde5b6dc612c092f049de3354c9ef1566e8f[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 16:43:12 2024 -0700
+
+    fixing frontend trigger
+
+[33mcommit 84575148573d393cc152402e1693c74c96c550a0[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 16:36:16 2024 -0700
+
+    test deployment
+
+[33mcommit 42f87beeb5b4e1ce15d76462052135da66915240[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 16:32:55 2024 -0700
+
+    test deployment
+
+[33mcommit 3c452675b9958a83891bcfece202b5ee7af981c2[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 16:27:10 2024 -0700
+
+    fixed deployment issue
+
+[33mcommit dd488efd1c87c70adb40de77bbcdc1123bb558b3[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 15:54:53 2024 -0700
+
+    updated buildspec.yaml
+
+[33mcommit c28bd081b45e260c21725ea16297ed8c4413f6c9[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 15:50:48 2024 -0700
+
+    updated buildspec.yaml
+
+[33mcommit 922db70f12ec27c675130e48fa16c37aeee870e2[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 15:48:42 2024 -0700
+
+    updated buildspec.yaml
+
+[33mcommit 39e276c1a5e62a617f6c986ac6079b8392f4ae3d[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 15:41:57 2024 -0700
+
+    configuring for CodePipeline
+
+[33mcommit b269d86e7cf4b9d004adfd15f8d3f8113e357130[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 12:32:41 2024 -0700
+
+    added dynamodb connection and routes to fetch all items and by id
+
+[33mcommit 08efce9e9ed2149bdf81c678c35b518502129e21[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Tue Aug 20 11:27:33 2024 -0700
+
+    django api initial setup and GET route added
+
+[33mcommit f4b322dd193b5c48e357571b2f7631057c3104ee[m
+Author: Nachiket <nmore@pdx.edu>
+Date:   Mon Aug 19 15:24:02 2024 -0700
+
+    initial setup
