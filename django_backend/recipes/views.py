@@ -6,7 +6,6 @@ from django.conf import settings
 from django.http import HttpResponse
 
 
-
 class Home(APIView):
     def get(self, request):
         return HttpResponse("Welcome to the Recipe API")
