@@ -2,6 +2,9 @@
 
 ## Description
 A web app focused on quick and easy recipes.
+- ***main***: main project files
+- ***django-backend:*** deployment branch for django
+- ***React-frontend:*** deployment branch for react
 
 ## Features
 - List of recipes

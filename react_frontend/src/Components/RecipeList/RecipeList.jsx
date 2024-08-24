@@ -14,7 +14,7 @@ const RecipeList = () => {
             })
             .catch(error => console.log(error));
 
-        
+
     }, []);
 
     return (
@@ -28,13 +28,13 @@ const RecipeList = () => {
             </div>
             <div className="recipe-list">
                 <div className="content">
-                {recipeList.length > 0 ? (
-                    recipeList.map((recipe, index) => (
-                        <RecipeCard key={index} recipe={recipe} />
-                    ))
-                ) : (
-                    <Loader />
-                )}
+                    {recipeList.length > 0 ? (
+                        recipeList.map((recipe, index) => (
+                            <RecipeCard key={index} recipe={recipe} />
+                        ))
+                    ) : (
+                        <Loader />
+                    )}
                 </div>
             </div>
         </div>

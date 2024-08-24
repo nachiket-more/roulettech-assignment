@@ -1,9 +1,10 @@
-.navbar-container{
+.navbar-container {
     height: fit-content;
     text-align: left;
     padding: 20px 40px;
 }
-.app-title{
+
+.app-title {
     color: rgba(114, 63, 95, 0.9);
     font-size: 25px;
     font-weight: bold;

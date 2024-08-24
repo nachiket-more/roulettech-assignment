@@ -1,4 +1,4 @@
-.recipe-card{
+.recipe-card {
     height: auto;
     width: 200px;
     margin: 20px;
@@ -9,10 +9,9 @@
     text-align: center;
 }
 
-.picture{
+.picture {
     height: 150px;
     width: 150px;
-    /* background-image: url("https://www.skinnytaste.com/wp-content/uploads/2019/05/Mediterranean-Sea-Bass-10.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,11 +19,11 @@
     margin-bottom: 10px;
 }
 
-.info-section{
+.info-section {
     height: fit-content;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,7 +31,7 @@
     color: var(--secondary-color);
 }
 
-.name{
+.name {
     font-size: 20px;
     color: var(--primary-color) !important;
 }
