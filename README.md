@@ -1,4 +1,4 @@
-﻿# Roulettech Assignment
+﻿# Web App for Quick and Easy Recipes
 
 ## Description
 A web app focused on quick and easy recipes.
