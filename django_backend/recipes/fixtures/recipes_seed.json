@@ -1,0 +1,542 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 1,
+    "fields": {
+      "recipe_name": "Spaghetti Carbonara",
+      "cuisine": "Italian",
+      "cooking_method": "Put a large pot of salted water on to boil over high heat, Finely chop the pancetta or bacon into small cubes and set aside, Grate parmesan generously into a bowl and crack in 3 egg yolks then whisk together, Season the egg mixture with freshly ground black pepper and set aside, Cook spaghetti until al dente — taste it at 1 minute before pack time, Fry pancetta in a dry pan over medium heat until golden and crispy, Reserve a cup of pasta water before draining the spaghetti, Take the pan off the heat and add the drained pasta to the pancetta, Pour egg mixture over the pasta and toss quickly adding pasta water a splash at a time to loosen, The residual heat cooks the egg into a silky sauce — serve immediately with extra parmesan",
+      "ingredients": "spaghetti, egg yolks, pancetta, parmesan, black pepper, salt",
+      "prep_time": "25 mins",
+      "serves": "2",
+      "tags": "italian, pasta, quick, classic, 30 minutes",
+      "image": "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 2,
+    "fields": {
+      "recipe_name": "Avocado Toast with Poached Egg",
+      "cuisine": "American, Australian",
+      "cooking_method": "Bring a small deep saucepan of water to a gentle simmer and add a splash of white vinegar, Crack each egg into a small cup first so you can slide it in gently, Create a gentle whirlpool in the water with a spoon then carefully slide in the egg, Cook for exactly 3 minutes for a runny yolk then lift out with a slotted spoon, While the egg cooks toast your sourdough until deeply golden and crispy, Halve the avocado scoop it into a bowl and mash with lemon juice salt and pepper, Spread avocado generously over toast right to the edges, Place the poached egg on top and season with flaky salt and chili flakes, Drizzle with a little olive oil and serve immediately while the egg is still warm",
+      "ingredients": "sourdough bread, avocado, eggs, lemon juice, red chili flakes, flaky salt, black pepper, olive oil",
+      "prep_time": "15 mins",
+      "serves": "1",
+      "tags": "breakfast, healthy, quick, vegetarian, 15 minutes",
+      "image": "https://www.themealdb.com/images/media/meals/1550441275.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 3,
+    "fields": {
+      "recipe_name": "Shakshuka",
+      "cuisine": "Middle Eastern, North African",
+      "cooking_method": "Heat a generous glug of olive oil in a wide heavy pan over medium heat, Add diced onion and cook stirring occasionally until soft and translucent about 8 minutes, Add sliced bell peppers and cook for another 5 minutes until they soften, Add garlic cumin paprika and chili and stir for 1 minute until fragrant, Pour in a can of crushed tomatoes and stir everything together, Season well with salt and pepper then simmer uncovered for 10 minutes until the sauce thickens, Use a spoon to make 4 deep wells in the sauce, Crack one egg into each well being careful not to break the yolk, Cover the pan with a lid and cook for 5 to 7 minutes until whites are set but yolks are still runny, Scatter with fresh parsley and serve straight from the pan with crusty bread",
+      "ingredients": "eggs, crushed tomatoes, red bell pepper, onion, garlic, cumin, paprika, chili flakes, olive oil, fresh parsley",
+      "prep_time": "30 mins",
+      "serves": "2",
+      "tags": "breakfast, vegetarian, eggs, spicy, one pan",
+      "image": "https://www.themealdb.com/images/media/meals/g373701551450225.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 4,
+    "fields": {
+      "recipe_name": "Vegetable Stir Fry",
+      "cuisine": "Chinese, Asian",
+      "cooking_method": "Mix soy sauce sesame oil a pinch of sugar and cornstarch in a small bowl to make the sauce and set aside, Chop all your vegetables before you start cooking — stir fry moves fast, Heat a wok or large frying pan over the highest heat possible until it begins to smoke, Add oil and swirl to coat then add garlic and ginger and stir for just 30 seconds, Add the hardest vegetables first — carrots and broccoli stalks — and toss constantly for 2 minutes, Add bell peppers and broccoli florets and continue tossing for 2 more minutes, The vegetables should be bright and have a slight char but still be crisp, Pour the sauce over everything and toss vigorously to coat every piece, Cook for 1 more minute until sauce thickens and clings to the vegetables, Serve immediately over steamed jasmine rice with extra soy sauce on the side",
+      "ingredients": "broccoli, bell peppers, carrots, snap peas, soy sauce, sesame oil, garlic, ginger, cornstarch, sugar, vegetable oil",
+      "prep_time": "20 mins",
+      "serves": "3",
+      "tags": "vegetarian, quick, healthy, vegan, 20 minutes, asian",
+      "image": "https://www.themealdb.com/images/media/meals/1529444830.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 5,
+    "fields": {
+      "recipe_name": "Fluffy Pancakes",
+      "cuisine": "American",
+      "cooking_method": "Whisk together flour baking powder sugar and a pinch of salt in a large bowl, Make a well in the centre and crack in the eggs, Add milk and melted butter to the well, Stir from the centre outwards until just combined — lumps are fine and overmixing makes tough pancakes, Rest the batter for 5 minutes while you heat the pan, Set a non-stick pan over medium-low heat and add a small knob of butter, Once butter foams pour in about 3 tablespoons of batter per pancake, Cook until bubbles appear all over the surface and the edges look set — about 2 minutes, Flip once and cook for 1 more minute until golden underneath, Keep warm in a 100C oven on a plate while you cook the rest, Stack and serve with maple syrup fresh berries and a dusting of icing sugar",
+      "ingredients": "plain flour, baking powder, sugar, salt, eggs, whole milk, butter, maple syrup, fresh berries",
+      "prep_time": "20 mins",
+      "serves": "4",
+      "tags": "breakfast, sweet, american, classic, quick",
+      "image": "https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 6,
+    "fields": {
+      "recipe_name": "Chicken Fried Rice",
+      "cuisine": "Chinese, Asian",
+      "cooking_method": "Cook your rice the day before if possible — day-old rice fries much better than fresh, Use a wok or the largest pan you have and get it screaming hot over maximum heat, Add a neutral oil with a high smoke point and swirl it around the pan, Crack in the eggs and scramble them quickly then push to the side of the wok, Add the diced chicken and spread it out — let it sear untouched for 1 minute before tossing, Add the cold rice and break up every single clump pressing it against the hot pan, Stir fry everything together for 2 minutes until the rice starts to get slightly crispy, Add soy sauce oyster sauce and sesame oil around the edges of the wok not directly on the rice, Toss in the peas and carrots and mix everything together for 1 more minute, Finish with sliced spring onion and a drizzle of sesame oil then serve immediately",
+      "ingredients": "cooked jasmine rice, chicken breast, eggs, soy sauce, oyster sauce, sesame oil, peas, carrots, spring onion, garlic, ginger, vegetable oil",
+      "prep_time": "20 mins",
+      "serves": "3",
+      "tags": "chinese, rice, chicken, quick, weeknight",
+      "image": "https://www.themealdb.com/images/media/meals/wuyd2h1765655837.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 7,
+    "fields": {
+      "recipe_name": "Creamy Tomato Soup",
+      "cuisine": "American, British",
+      "cooking_method": "Heat olive oil in a large pot over medium heat until shimmering, Add diced onion and cook stirring occasionally for 8 minutes until soft and sweet, Add garlic and cook for 1 more minute until fragrant, Pour in two cans of whole peeled tomatoes and crush them with a spoon, Add chicken or vegetable stock and dried basil and bring to a gentle boil, Reduce heat and simmer uncovered for 15 minutes to develop the flavour, Use a hand blender to blitz the soup completely smooth — blend for at least 1 full minute, Return to low heat and stir in the cream then season generously with salt and pepper, Taste and adjust — add a pinch of sugar if the tomatoes are acidic, Serve in warm bowls with a swirl of cream a few basil leaves and crusty bread on the side",
+      "ingredients": "canned whole tomatoes, onion, garlic, chicken stock, heavy cream, olive oil, basil, salt, pepper, sugar",
+      "prep_time": "30 mins",
+      "serves": "4",
+      "tags": "soup, vegetarian, comfort food, quick, one pot",
+      "image": "https://www.themealdb.com/images/media/meals/stpuws1511191310.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 8,
+    "fields": {
+      "recipe_name": "Full English Breakfast",
+      "cuisine": "British",
+      "cooking_method": "Start with the sausages as they take longest — fry in a dry pan over medium heat turning every few minutes for about 12 minutes until deep golden brown all over, Add the bacon rashers to the same pan and fry for 3 minutes per side until crispy at the edges, In a separate small pan fry the mushrooms in butter with a pinch of salt until golden and juicy, Halve the tomatoes and season the cut side then place them cut side down in the bacon pan, Gently crack the eggs into the pan alongside everything and baste with the fat for a sunny side up finish, Toast the bread until golden then butter it immediately while hot, Warm the baked beans in a small saucepan over low heat stirring occasionally, Plate everything up so nothing is touching — beans in a small pot on the side, Serve immediately while everything is still hot — a full English waits for no one",
+      "ingredients": "pork sausages, back bacon, eggs, mushrooms, tomatoes, baked beans, bread, butter, salt, pepper",
+      "prep_time": "25 mins",
+      "serves": "2",
+      "tags": "british, breakfast, eggs, classic, filling",
+      "image": "https://www.themealdb.com/images/media/meals/utxryw1511721587.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 9,
+    "fields": {
+      "recipe_name": "Egg Drop Soup",
+      "cuisine": "Chinese",
+      "cooking_method": "Pour chicken broth into a pot and bring to a gentle simmer over medium heat, Add grated fresh ginger and a small pinch of white pepper to the simmering broth, Mix cornstarch with a little cold water in a cup until completely smooth with no lumps, Pour the cornstarch slurry into the simmering broth while stirring constantly to thicken it slightly, The broth should coat a spoon lightly — add more slurry if needed, Beat the eggs well in a small bowl until the yolk and white are fully combined, Hold a fork over the pot and slowly drizzle the beaten egg through the tines in a thin stream, Stir the broth in slow gentle circles as you pour — this creates the signature silky ribbons, Season with soy sauce and sesame oil and taste for salt, Serve immediately in warm bowls topped with thinly sliced spring onion",
+      "ingredients": "chicken broth, eggs, cornstarch, fresh ginger, soy sauce, sesame oil, white pepper, spring onion",
+      "prep_time": "10 mins",
+      "serves": "2",
+      "tags": "chinese, soup, quick, easy, 10 minutes",
+      "image": "https://www.themealdb.com/images/media/meals/1529446137.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 10,
+    "fields": {
+      "recipe_name": "Cajun Fish Tacos",
+      "cuisine": "American, Mexican",
+      "cooking_method": "Mix paprika cumin garlic powder cayenne oregano salt and pepper together in a small bowl for the Cajun spice blend, Pat the fish fillets completely dry with paper towels — moisture is the enemy of a good sear, Rub the spice blend all over both sides of the fish pressing it in gently, Heat a pan over high heat until very hot then add oil and place the fish in carefully, Cook without moving for 3 minutes until a golden crust forms then flip just once, Cook the other side for 2 to 3 minutes depending on thickness then rest for 2 minutes, While the fish rests warm the tortillas directly over a gas flame or in a dry pan for 30 seconds, Make the slaw by tossing shredded cabbage with lime juice a little mayo salt and pepper, Flake the fish into large chunks — don't break it up too small, Build each taco with slaw fish a squeeze of lime and a drizzle of hot sauce",
+      "ingredients": "white fish fillets, flour tortillas, red cabbage, lime, mayo, paprika, cumin, garlic powder, cayenne, oregano, hot sauce",
+      "prep_time": "25 mins",
+      "serves": "4",
+      "tags": "american, mexican, fish, tacos, quick",
+      "image": "https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 11,
+    "fields": {
+      "recipe_name": "Thai Green Curry", "cuisine": "Thai",
+      "cooking_method": "Fry green curry paste in a dry pan for 2 mins until fragrant, Add coconut milk and stir to combine, Add chicken sliced thin and simmer for 10 mins, Add vegetables and fish sauce and palm sugar, Simmer for 5 more mins until chicken is cooked, Finish with fresh Thai basil and serve with jasmine rice",
+      "ingredients": "chicken, green curry paste, coconut milk, fish sauce, palm sugar, Thai basil, bamboo shoots, kaffir lime leaves, jasmine rice",
+      "prep_time": "25 mins", "serves": "4", "tags": "thai, curry, quick, coconut",
+      "image": "https://www.themealdb.com/images/media/meals/sstssx1487349585.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 12,
+    "fields": {
+      "recipe_name": "Teriyaki Chicken", "cuisine": "Japanese",
+      "cooking_method": "Mix soy sauce mirin sake and sugar in a bowl for the teriyaki sauce, Score chicken thighs on the skin side for even cooking, Sear chicken skin side down in a pan over medium high heat for 5 mins, Flip and cook for 3 more mins, Pour sauce over chicken and simmer basting constantly until sauce is thick and glossy, Rest for 2 mins then slice and serve over steamed rice with spring onion",
+      "ingredients": "chicken thighs, soy sauce, mirin, sake, sugar, spring onion, sesame seeds, steamed rice",
+      "prep_time": "20 mins", "serves": "2", "tags": "japanese, chicken, quick, glazed",
+      "image": "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 13,
+    "fields": {
+      "recipe_name": "General Tso's Chicken", "cuisine": "Chinese, American",
+      "cooking_method": "Cut chicken into bite sized pieces and toss in cornstarch salt and pepper, Deep fry chicken in batches until golden and crispy then drain on paper towels, Mix soy sauce hoisin rice vinegar sugar and cornstarch in a bowl for the sauce, Fry garlic ginger and dried chili in oil for 30 seconds, Add sauce and bring to a bubble stirring until thickened, Toss in the crispy chicken and coat evenly then serve immediately with rice",
+      "ingredients": "chicken thighs, cornstarch, soy sauce, hoisin, rice vinegar, sugar, garlic, ginger, dried chili, oil",
+      "prep_time": "30 mins", "serves": "4", "tags": "chinese, chicken, crispy, quick",
+      "image": "https://www.themealdb.com/images/media/meals/1529444113.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 14,
+    "fields": {
+      "recipe_name": "Gambas al Ajillo", "cuisine": "Spanish",
+      "cooking_method": "Peel and devein prawns leaving tails on and pat completely dry, Slice garlic very thin and set aside with dried chili, Heat olive oil in a small pan over high heat until shimmering, Add garlic and chili and fry for just 30 seconds until golden, Add prawns in a single layer and cook for 1 min per side, Season with salt and add a splash of dry sherry, Toss everything together and finish with fresh parsley, Serve immediately in the pan with crusty bread to soak up the oil",
+      "ingredients": "raw prawns, garlic, olive oil, dried chili, dry sherry, fresh parsley, crusty bread, salt",
+      "prep_time": "15 mins", "serves": "2", "tags": "spanish, seafood, quick, tapas",
+      "image": "https://www.themealdb.com/images/media/meals/ze8uwg1763196123.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 15,
+    "fields": {
+      "recipe_name": "Tuna Nicoise Salad", "cuisine": "French",
+      "cooking_method": "Boil small potatoes until just tender then halve and set aside to cool slightly, Blanch green beans in boiling salted water for 3 mins then plunge into ice water, Soft boil eggs for exactly 7 mins then peel and halve, Make dressing by whisking dijon mustard red wine vinegar and olive oil together, Arrange lettuce leaves on a platter then top with potatoes beans tomatoes and olives, Place tuna on top and nestle the egg halves around the plate, Drizzle dressing over everything and season with salt and pepper",
+      "ingredients": "tuna, green beans, potatoes, eggs, cherry tomatoes, olives, lettuce, dijon mustard, red wine vinegar, olive oil",
+      "prep_time": "25 mins", "serves": "2", "tags": "french, salad, tuna, healthy",
+      "image": "https://www.themealdb.com/images/media/meals/yypwwq1511304979.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 16,
+    "fields": {
+      "recipe_name": "Grilled Mac and Cheese Sandwich", "cuisine": "American",
+      "cooking_method": "Cook macaroni until al dente then drain and set aside, Make a quick cheese sauce by melting butter adding flour then whisking in milk until smooth, Stir in cheddar and gruyere until melted then season with salt pepper and mustard powder, Fold mac into the cheese sauce until fully coated, Butter two slices of bread generously on the outside, Pile mac and cheese onto one slice then top with the other butter side out, Grill in a pan over medium heat pressing down for 3 mins per side until deeply golden",
+      "ingredients": "macaroni, cheddar, gruyere, butter, flour, milk, bread, mustard powder, salt, pepper",
+      "prep_time": "25 mins", "serves": "2", "tags": "american, comfort food, cheese, quick",
+      "image": "https://www.themealdb.com/images/media/meals/xutquv1505330523.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 17,
+    "fields": {
+      "recipe_name": "Tahini Lentils", "cuisine": "Middle Eastern",
+      "cooking_method": "Rinse red lentils until water runs clear then drain, Cook lentils in water with turmeric and salt for 15 mins until soft and just breaking down, Meanwhile fry onion in olive oil until deeply golden and slightly crispy, Make tahini sauce by whisking tahini with lemon juice garlic and water until smooth, Drain any excess water from the lentils and stir in the tahini sauce, Top with the crispy onions and a drizzle of olive oil, Finish with fresh parsley and serve warm with flatbread",
+      "ingredients": "red lentils, tahini, lemon, garlic, onion, turmeric, olive oil, fresh parsley, flatbread",
+      "prep_time": "25 mins", "serves": "4", "tags": "middle eastern, vegetarian, healthy, quick",
+      "image": "https://www.themealdb.com/images/media/meals/vpxyqt1511464175.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 18,
+    "fields": {
+      "recipe_name": "Chilli Prawn Linguine", "cuisine": "Italian",
+      "cooking_method": "Cook linguine in generously salted boiling water until al dente, Fry garlic and chili in olive oil over medium heat for 1 min, Add prawns and cook for 2 mins per side until just pink, Deglaze with a splash of white wine and let it bubble for 1 min, Add a ladle of pasta water and toss in the drained linguine, Stir until the sauce coats the pasta adding more pasta water if needed, Finish with fresh parsley lemon zest and a drizzle of good olive oil",
+      "ingredients": "linguine, prawns, garlic, red chili, white wine, olive oil, parsley, lemon, pasta water",
+      "prep_time": "20 mins", "serves": "2", "tags": "italian, seafood, pasta, quick",
+      "image": "https://www.themealdb.com/images/media/meals/usywpp1511189717.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 19,
+    "fields": {
+      "recipe_name": "Tom Yum Soup", "cuisine": "Thai",
+      "cooking_method": "Bring chicken stock to a boil and add lemongrass galangal and kaffir lime leaves, Simmer for 5 mins to infuse the aromatics then add mushrooms, Add prawns and cook for 2 mins until just pink, Season with fish sauce lime juice and a pinch of sugar, Add chili slices and taste — it should be sour salty and spicy, Remove lemongrass and galangal before serving, Ladle into bowls and garnish with fresh coriander and extra lime",
+      "ingredients": "prawns, chicken stock, lemongrass, galangal, kaffir lime leaves, mushrooms, fish sauce, lime, chili, coriander",
+      "prep_time": "20 mins", "serves": "4", "tags": "thai, soup, spicy, quick",
+      "image": "https://www.themealdb.com/images/media/meals/9c5nlx1763424766.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 20,
+    "fields": {
+      "recipe_name": "Tofu Stir Fry with Greens", "cuisine": "Asian",
+      "cooking_method": "Press tofu for 15 mins to remove moisture then cut into cubes, Fry tofu in oil over high heat without moving for 3 mins until golden then flip, Mix soy sauce sesame oil garlic and cornstarch for the sauce, Remove tofu and stir fry garlic and ginger for 30 seconds, Add broccoli and bok choy and toss for 3 mins until bright and tender-crisp, Return tofu pour sauce over and toss everything together, Garnish with cashews sesame seeds and spring onion",
+      "ingredients": "firm tofu, broccoli, bok choy, cashews, soy sauce, sesame oil, garlic, ginger, cornstarch, spring onion, sesame seeds",
+      "prep_time": "25 mins", "serves": "2", "tags": "vegan, vegetarian, asian, quick",
+      "image": "https://www.themealdb.com/images/media/meals/minfsc1763766806.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 21,
+    "fields": {
+      "recipe_name": "Beef and Broccoli Stir Fry", "cuisine": "Chinese, American",
+      "cooking_method": "Slice beef thin against the grain and marinate in soy sauce cornstarch and baking soda for 15 mins, Blanch broccoli in boiling water for 2 mins then drain and set aside, Mix oyster sauce soy sauce sesame oil sugar and cornstarch for the sauce, Sear beef in a smoking hot wok in batches for 1 min per side then remove, Fry garlic and ginger for 30 seconds in the same wok, Add broccoli and toss for 1 min then return beef to the pan, Pour sauce over everything and toss until glossy and thick, Serve immediately over steamed white rice",
+      "ingredients": "beef sirloin, broccoli, oyster sauce, soy sauce, garlic, ginger, cornstarch, sesame oil, sugar, baking soda",
+      "prep_time": "25 mins", "serves": "4", "tags": "chinese, beef, quick, stir fry",
+      "image": "https://www.themealdb.com/images/media/meals/m0p0j81765568742.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 22,
+    "fields": {
+      "recipe_name": "Beef Lo Mein", "cuisine": "Chinese",
+      "cooking_method": "Cook egg noodles until just tender then drain and toss with a little sesame oil, Slice beef thin and season with soy sauce and cornstarch, Sear beef in a hot wok for 2 mins then remove and set aside, Stir fry garlic and vegetables in the same wok for 2 mins, Add noodles and toss everything together over high heat, Add soy sauce oyster sauce and sesame oil and toss for 1 min, Return beef to the wok and toss everything together, Top with sliced spring onion and serve immediately",
+      "ingredients": "egg noodles, beef sirloin, cabbage, carrots, spring onion, soy sauce, oyster sauce, sesame oil, garlic, cornstarch",
+      "prep_time": "20 mins", "serves": "3", "tags": "chinese, noodles, beef, quick",
+      "image": "https://www.themealdb.com/images/media/meals/1529444830.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 23,
+    "fields": {
+      "recipe_name": "Baked Salmon with Fennel", "cuisine": "British, Mediterranean",
+      "cooking_method": "Preheat oven to 200C and line a baking tray with parchment, Slice fennel thin and toss with olive oil salt and pepper on the tray, Roast fennel for 15 mins until starting to soften and colour, Place salmon fillets on top of the fennel skin side down, Halve cherry tomatoes and scatter around the salmon, Drizzle everything with olive oil and season the salmon, Bake for 12 to 15 mins until salmon is just cooked through and flakes easily, Finish with fresh dill and a squeeze of lemon",
+      "ingredients": "salmon fillets, fennel, cherry tomatoes, olive oil, lemon, fresh dill, salt, pepper",
+      "prep_time": "30 mins", "serves": "2", "tags": "healthy, fish, quick, baked",
+      "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 24,
+    "fields": {
+      "recipe_name": "Banana Pancakes", "cuisine": "American",
+      "cooking_method": "Mash two very ripe bananas in a bowl until completely smooth with no lumps, Add eggs and whisk together until well combined, Mix in flour baking powder cinnamon and a pinch of salt, The batter will be thick — do not add liquid, Heat a non-stick pan over medium-low heat and add a small knob of butter, Drop spoonfuls of batter and spread gently into rounds, Cook for 2 mins until bubbles form and edges look set then flip, Cook for 1 more min until golden, Serve stacked with a drizzle of honey and fresh berries",
+      "ingredients": "ripe bananas, eggs, flour, baking powder, cinnamon, salt, butter, honey, fresh berries",
+      "prep_time": "15 mins", "serves": "2", "tags": "breakfast, sweet, quick, healthy",
+      "image": "https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 25,
+    "fields": {
+      "recipe_name": "BBQ Pork Sloppy Joes", "cuisine": "American",
+      "cooking_method": "Brown ground pork in a pan over medium high heat breaking it up as it cooks, Drain excess fat then add diced onion and cook for 3 mins, Add garlic and cook for 1 min, Stir in ketchup BBQ sauce worcestershire and brown sugar, Add a splash of water and simmer for 10 mins until thick and saucy, Season with salt and pepper and taste for balance, Toast burger buns until golden, Pile the sloppy joe mixture onto the bun bottoms and top with coleslaw",
+      "ingredients": "ground pork, onion, garlic, ketchup, BBQ sauce, worcestershire, brown sugar, burger buns, coleslaw",
+      "prep_time": "25 mins", "serves": "4", "tags": "american, pork, quick, comfort food",
+      "image": "https://www.themealdb.com/images/media/meals/atd5sh1583188467.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 26,
+    "fields": {
+      "recipe_name": "Breakfast Potatoes", "cuisine": "American",
+      "cooking_method": "Cut potatoes into small even cubes and par-boil for 5 mins then drain well, Heat oil in a large pan over high heat until shimmering, Add potatoes in a single layer and do not touch for 3 mins until a crust forms, Flip and cook for another 3 mins then add diced onion and peppers, Season generously with paprika garlic powder salt and pepper, Toss and cook for 5 more mins until everything is golden and crispy, Taste and adjust seasoning, Serve immediately with eggs on the side",
+      "ingredients": "potatoes, onion, bell pepper, paprika, garlic powder, olive oil, salt, pepper",
+      "prep_time": "20 mins", "serves": "4", "tags": "american, breakfast, vegetarian, quick",
+      "image": "https://www.themealdb.com/images/media/meals/1550441882.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 27,
+    "fields": {
+      "recipe_name": "Baingan Bharta", "cuisine": "Indian",
+      "cooking_method": "Char the eggplant directly over a gas flame turning with tongs until completely blackened and collapsed, Let it cool then peel off all the skin and roughly mash the flesh, Fry onion in oil until deep golden then add garlic ginger and tomatoes, Cook until tomatoes break down and oil separates from the masala, Add cumin coriander turmeric and chili powder and stir for 1 min, Fold in the mashed eggplant and cook for 5 mins, Season with salt and finish with fresh coriander and a squeeze of lemon, Serve with warm roti or rice",
+      "ingredients": "eggplant, onion, tomatoes, garlic, ginger, cumin, coriander, turmeric, chili powder, fresh coriander, lemon",
+      "prep_time": "30 mins", "serves": "4", "tags": "indian, vegetarian, vegan, smoky",
+      "image": "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 28,
+    "fields": {
+      "recipe_name": "Thai Fried Rice with Prawns", "cuisine": "Thai",
+      "cooking_method": "Use day-old cold rice for best results — fresh rice is too wet, Heat wok over maximum heat until smoking then add oil, Add garlic and stir for 20 seconds then add prawns and cook for 1 min per side, Push everything to the side and scramble 2 eggs in the center, Add cold rice and press it flat against the hot wok — let it sit for 1 min to get crispy, Toss everything together then add fish sauce soy sauce and a pinch of sugar, Add spring onion and toss for 30 more seconds, Serve with lime wedges fresh chili and cucumber slices on the side",
+      "ingredients": "jasmine rice, prawns, eggs, garlic, fish sauce, soy sauce, spring onion, sugar, lime, cucumber",
+      "prep_time": "15 mins", "serves": "2", "tags": "thai, rice, seafood, quick",
+      "image": "https://www.themealdb.com/images/media/meals/hblwvg1763478203.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 29,
+    "fields": {
+      "recipe_name": "Chickpea Fajitas", "cuisine": "Mexican, American",
+      "cooking_method": "Drain and rinse chickpeas then pat dry on paper towels, Toss chickpeas with cumin smoked paprika garlic powder and chili powder, Fry chickpeas in oil over high heat for 5 mins until slightly crispy, Remove and cook sliced peppers and onions in the same pan for 5 mins, Return chickpeas to the pan and toss together, Warm tortillas over a gas flame or dry pan, Load tortillas with the chickpea mixture and top with avocado sour cream and salsa, Finish with a squeeze of lime and fresh coriander",
+      "ingredients": "chickpeas, bell peppers, onion, flour tortillas, cumin, smoked paprika, chili powder, avocado, sour cream, salsa, lime",
+      "prep_time": "20 mins", "serves": "4", "tags": "mexican, vegetarian, vegan, quick",
+      "image": "https://www.themealdb.com/images/media/meals/tvtxpq1511464705.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 30,
+    "fields": {
+      "recipe_name": "Beef Stroganoff", "cuisine": "Russian, American",
+      "cooking_method": "Slice beef fillet thin against the grain and season with salt and pepper, Sear beef in a very hot pan in batches for 1 min per side — do not overcrowd, Remove beef and fry sliced mushrooms and onion in butter until golden, Add garlic and cook for 1 min then add a splash of brandy if using, Stir in beef stock and Dijon mustard and simmer for 5 mins, Reduce heat and stir in sour cream — do not boil or it will split, Return beef to the pan and heat through gently, Serve over egg noodles or rice with fresh parsley",
+      "ingredients": "beef fillet, mushrooms, onion, garlic, beef stock, sour cream, dijon mustard, butter, egg noodles, parsley",
+      "prep_time": "25 mins", "serves": "4", "tags": "russian, beef, creamy, quick",
+      "image": "https://www.themealdb.com/images/media/meals/svprys1511176755.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 31,
+    "fields": {
+      "recipe_name": "French Omelette", "cuisine": "French",
+      "cooking_method": "Crack 3 eggs into a bowl and whisk vigorously until yolks and whites are fully combined, Season with salt and a pinch of white pepper, Heat a small non-stick pan over medium heat and add a generous knob of butter, When butter foams pour in the eggs and immediately start stirring with a silicone spatula, Keep stirring constantly in small circles pulling the egg from the edges, When the egg is mostly set but still slightly wet on top stop stirring, Add any filling along the centre then tilt the pan and fold the omelette in thirds, Slide it seam-side down onto the plate in one smooth motion, It should be pale yellow with no colour — that is the French way",
+      "ingredients": "eggs, butter, salt, white pepper, chives, gruyere cheese",
+      "prep_time": "10 mins", "serves": "1", "tags": "french, breakfast, quick, eggs",
+      "image": "https://www.themealdb.com/images/media/meals/yvpuuy1511797244.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 32,
+    "fields": {
+      "recipe_name": "French Onion Soup", "cuisine": "French",
+      "cooking_method": "Slice onions very thin and cook in butter over low heat stirring every 10 mins for 45 mins until deep golden brown and caramelised, Add a splash of white wine and let it evaporate completely, Pour in beef stock and thyme and simmer for 15 mins, Season generously with salt and pepper, Ladle soup into oven-safe bowls and top with a thick slice of toasted baguette, Cover with a generous layer of grated gruyere, Grill under the broiler until the cheese is bubbling and golden brown",
+      "ingredients": "onions, beef stock, butter, white wine, baguette, gruyere, thyme, salt, pepper",
+      "prep_time": "1 hr 15 mins", "serves": "4", "tags": "french, soup, comfort food, classic",
+      "image": "https://www.themealdb.com/images/media/meals/xvrrux1511783685.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 33,
+    "fields": {
+      "recipe_name": "Fettuccine Alfredo", "cuisine": "Italian",
+      "cooking_method": "Cook fettuccine in generously salted boiling water until al dente, Reserve 1 cup of pasta water before draining, Melt butter in a wide pan over medium low heat, Add finely grated parmesan a handful at a time stirring constantly, Add pasta water a splash at a time to create a silky emulsified sauce, Add the drained pasta and toss vigorously to coat every strand, The sauce should cling to the pasta not pool at the bottom, Season with white pepper and a pinch of nutmeg, Serve immediately with extra parmesan and fresh parsley",
+      "ingredients": "fettuccine, butter, parmesan, pasta water, white pepper, nutmeg, parsley",
+      "prep_time": "20 mins", "serves": "2", "tags": "italian, pasta, quick, vegetarian",
+      "image": "https://www.themealdb.com/images/media/meals/uquqtu1511178042.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 34,
+    "fields": {
+      "recipe_name": "French Lentils with Garlic", "cuisine": "French",
+      "cooking_method": "Rinse green lentils then cover with cold water and bring to a boil, Reduce heat and simmer for 20 mins until tender but not mushy, Meanwhile fry diced onion carrot and celery in olive oil until soft, Add garlic and thyme and cook for 1 more minute, Drain lentils and add to the vegetable base, Season with salt pepper and red wine vinegar, Stir in a knob of butter for richness, Serve warm with crusty bread or alongside grilled sausages",
+      "ingredients": "green lentils, onion, carrot, celery, garlic, thyme, olive oil, red wine vinegar, butter",
+      "prep_time": "35 mins", "serves": "4", "tags": "french, vegetarian, healthy, quick",
+      "image": "https://www.themealdb.com/images/media/meals/vwwspt1487394060.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 35,
+    "fields": {
+      "recipe_name": "Falafel Pita Sandwich", "cuisine": "Middle Eastern",
+      "cooking_method": "Blend soaked chickpeas with onion garlic cumin coriander parsley and salt — do not use canned chickpeas, Refrigerate the mixture for 30 mins then shape into small patties, Fry in 2cm of oil at 175C for 3 mins per side until deep golden and crispy, Drain on paper towels and season immediately, Warm pita bread then slice open to create a pocket, Spread tahini sauce generously inside, Fill with falafel sliced tomato cucumber and pickled onion, Drizzle with extra tahini and a sprinkle of sumac",
+      "ingredients": "dried chickpeas, onion, garlic, cumin, coriander, parsley, pita bread, tahini, tomato, cucumber, pickled onion, sumac",
+      "prep_time": "45 mins", "serves": "4", "tags": "middle eastern, vegetarian, vegan, street food",
+      "image": "https://www.themealdb.com/images/media/meals/ae6clc1760524712.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 36,
+    "fields": {
+      "recipe_name": "Ma Po Tofu", "cuisine": "Chinese",
+      "cooking_method": "Crumble silken tofu into large chunks and set aside gently, Fry ground pork in oil until browned then add doubanjiang and cook for 1 min, Add garlic and ginger and stir for 30 seconds, Pour in chicken stock and bring to a simmer, Gently slide in the tofu and simmer for 5 mins without stirring too much, Add soy sauce and a pinch of sugar then thicken with a cornstarch slurry, Finish with sesame oil and Sichuan peppercorn powder, Top with sliced spring onion and serve over steamed rice",
+      "ingredients": "silken tofu, ground pork, doubanjiang, garlic, ginger, chicken stock, soy sauce, cornstarch, Sichuan peppercorn, spring onion",
+      "prep_time": "20 mins", "serves": "4", "tags": "chinese, spicy, quick, tofu",
+      "image": "https://www.themealdb.com/images/media/meals/1525874812.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 37,
+    "fields": {
+      "recipe_name": "Matar Paneer", "cuisine": "Indian",
+      "cooking_method": "Fry onion in oil until golden then blend with tomatoes into a smooth paste, Cook the paste back in the pan with garlic ginger and spices until oil separates, Add peas and a splash of water and simmer for 5 mins, Fry paneer cubes separately until golden on both sides then add to the curry, Stir in cream and simmer for 3 more mins, Season with salt and garnish with fresh coriander, Serve with naan or steamed basmati rice",
+      "ingredients": "paneer, peas, onion, tomatoes, garlic, ginger, cumin, coriander, garam masala, cream, fresh coriander",
+      "prep_time": "30 mins", "serves": "4", "tags": "indian, vegetarian, curry, quick",
+      "image": "https://www.themealdb.com/images/media/meals/xxpqsy1511452222.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 38,
+    "fields": {
+      "recipe_name": "Mediterranean Pasta Salad", "cuisine": "Italian, Mediterranean",
+      "cooking_method": "Cook pasta until al dente then rinse under cold water and drain well, Halve cherry tomatoes and slice olives and roasted peppers, Crumble feta cheese into chunks, Make dressing by whisking olive oil red wine vinegar dried oregano garlic and salt, Toss pasta with all the vegetables and half the dressing, Add feta and toss gently so it does not break up too much, Taste and add more dressing as needed, Chill for 20 mins before serving for best flavour",
+      "ingredients": "pasta, cherry tomatoes, olives, roasted peppers, feta, red onion, olive oil, red wine vinegar, oregano, garlic",
+      "prep_time": "25 mins", "serves": "6", "tags": "italian, vegetarian, salad, make ahead",
+      "image": "https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 39,
+    "fields": {
+      "recipe_name": "Ramen with Boiled Egg", "cuisine": "Japanese",
+      "cooking_method": "Soft boil eggs for 7 mins then transfer to iced water and peel when cool, Marinate peeled eggs in soy sauce mirin and water for at least 30 mins, Simmer chicken or pork broth with soy sauce mirin garlic and ginger for 15 mins, Cook ramen noodles separately until just tender then drain, Place noodles in deep bowls and ladle hot broth over them, Halve the marinated eggs and place on top, Add toppings of sliced spring onion bamboo shoots nori and sesame seeds, Finish with a drizzle of sesame oil and chili oil",
+      "ingredients": "ramen noodles, eggs, chicken broth, soy sauce, mirin, garlic, ginger, spring onion, bamboo shoots, nori, sesame oil",
+      "prep_time": "30 mins", "serves": "2", "tags": "japanese, noodles, soup, quick",
+      "image": "https://www.themealdb.com/images/media/meals/ip5xtp1769779958.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 40,
+    "fields": {
+      "recipe_name": "Ratatouille", "cuisine": "French",
+      "cooking_method": "Dice all vegetables into similar sized pieces so they cook evenly, Fry onion and garlic in olive oil until soft then add to a baking dish, Season each vegetable separately with salt and olive oil, Layer courgette aubergine and tomato in overlapping slices on top, Drizzle generously with olive oil and scatter with thyme and rosemary, Cover with foil and bake at 180C for 30 mins, Remove foil and bake for 20 more mins until vegetables are tender and slightly caramelised, Serve warm or at room temperature with crusty bread",
+      "ingredients": "courgette, aubergine, tomatoes, onion, garlic, bell pepper, olive oil, thyme, rosemary, salt, pepper",
+      "prep_time": "1 hr", "serves": "6", "tags": "french, vegetarian, vegan, mediterranean",
+      "image": "https://www.themealdb.com/images/media/meals/wrpwuu1511786491.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 41,
+    "fields": {
+      "recipe_name": "Massaman Beef Curry", "cuisine": "Thai",
+      "cooking_method": "Brown beef chunks in oil over high heat in batches then set aside, Fry massaman curry paste in the same pot for 2 mins until fragrant, Add coconut milk and bring to a simmer, Return beef to the pot with potatoes onion and fish sauce, Add palm sugar tamarind and roasted peanuts, Simmer covered for 1 hour until beef is very tender, Taste and adjust seasoning — it should be rich sweet and mildly spicy, Garnish with extra peanuts and fried shallots, Serve with steamed jasmine rice",
+      "ingredients": "beef chuck, massaman curry paste, coconut milk, potatoes, onion, fish sauce, palm sugar, tamarind, roasted peanuts",
+      "prep_time": "1 hr 30 mins", "serves": "6", "tags": "thai, beef, curry, comfort food",
+      "image": "https://www.themealdb.com/images/media/meals/tvtxpq1511464175.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 42,
+    "fields": {
+      "recipe_name": "Moroccan Carrot Soup", "cuisine": "Moroccan, Middle Eastern",
+      "cooking_method": "Fry onion in olive oil until soft then add garlic cumin coriander and harissa, Cook spices for 1 min until fragrant, Add chopped carrots and vegetable stock and bring to a boil, Simmer for 20 mins until carrots are completely tender, Blend until very smooth — blend for a full minute for a silky texture, Return to heat and stir in a squeeze of lemon and season with salt, Swirl in a spoonful of yogurt and drizzle with olive oil, Scatter with toasted pumpkin seeds and fresh coriander",
+      "ingredients": "carrots, onion, garlic, cumin, coriander, harissa, vegetable stock, lemon, yogurt, olive oil, pumpkin seeds",
+      "prep_time": "35 mins", "serves": "4", "tags": "moroccan, vegetarian, vegan, healthy",
+      "image": "https://www.themealdb.com/images/media/meals/jcr46d1614763831.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 43,
+    "fields": {
+      "recipe_name": "Rigatoni with Sausage Sauce", "cuisine": "Italian",
+      "cooking_method": "Remove sausage meat from casings and crumble into a hot pan, Fry over high heat until browned and crispy in spots, Add fennel seeds and chili flakes and cook for 1 min, Pour in white wine and let it evaporate, Add crushed tomatoes and simmer for 20 mins until thick, Cook rigatoni until al dente then reserve pasta water before draining, Toss pasta into the sauce adding pasta water to loosen, Finish with fresh parsley and grated parmesan",
+      "ingredients": "rigatoni, Italian sausages, crushed tomatoes, fennel seeds, chili flakes, white wine, parmesan, parsley",
+      "prep_time": "35 mins", "serves": "4", "tags": "italian, pasta, sausage, quick",
+      "image": "https://www.themealdb.com/images/media/meals/qtqvys1468573168.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 44,
+    "fields": {
+      "recipe_name": "Thai Beef Stir Fry", "cuisine": "Thai",
+      "cooking_method": "Slice beef sirloin very thin against the grain and marinate in oyster sauce and soy sauce for 10 mins, Get your wok screaming hot before you add anything, Add oil then beef in a single layer and sear for 1 min without touching, Toss and cook for 1 more min then remove from wok, Fry garlic and chili in the same wok for 20 seconds, Add vegetables and toss for 2 mins over high heat, Return beef and add fish sauce oyster sauce and a pinch of sugar, Toss everything together for 30 seconds, Finish with Thai basil leaves and serve immediately over jasmine rice",
+      "ingredients": "beef sirloin, Thai basil, oyster sauce, fish sauce, soy sauce, garlic, chili, vegetables, sugar, jasmine rice",
+      "prep_time": "20 mins", "serves": "2", "tags": "thai, beef, quick, stir fry",
+      "image": "https://www.themealdb.com/images/media/meals/kyuxew1763479470.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 45,
+    "fields": {
+      "recipe_name": "Mee Goreng", "cuisine": "Malaysian, Indonesian",
+      "cooking_method": "Cook egg noodles until just tender then drain and toss with a little oil to prevent sticking, Mix kecap manis soy sauce chili sauce and tomato ketchup in a bowl for the sauce, Fry tofu or chicken in oil until golden then push to the side, Scramble an egg in the same wok, Add noodles and pour sauce over then toss vigorously on high heat, Add bean sprouts and spring onion and toss for 1 min, Taste and add more kecap manis if needed, Serve with a fried egg on top sliced chili and lime",
+      "ingredients": "egg noodles, eggs, tofu, bean sprouts, spring onion, kecap manis, soy sauce, chili sauce, ketchup, lime",
+      "prep_time": "20 mins", "serves": "2", "tags": "malaysian, noodles, quick, street food",
+      "image": "https://www.themealdb.com/images/media/meals/xquakq1619787532.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 46,
+    "fields": {
+      "recipe_name": "Garides Saganaki", "cuisine": "Greek",
+      "cooking_method": "Fry diced onion in olive oil until soft then add garlic and chili flakes, Add chopped tomatoes and a splash of ouzo or white wine and simmer for 10 mins, Season with salt pepper and dried oregano until you have a thick sauce, Add raw prawns and nestle them into the sauce, Crumble feta generously over the top, Cover and cook for 5 mins until prawns are pink and feta is slightly melted, Finish with fresh parsley and a drizzle of olive oil, Serve sizzling hot with crusty bread to scoop up the sauce",
+      "ingredients": "prawns, feta, tomatoes, onion, garlic, chili flakes, ouzo, olive oil, oregano, fresh parsley",
+      "prep_time": "25 mins", "serves": "4", "tags": "greek, seafood, quick, one pan",
+      "image": "https://www.themealdb.com/images/media/meals/wuvryu1468232995.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 47,
+    "fields": {
+      "recipe_name": "Thai Curry Noodle Soup", "cuisine": "Thai",
+      "cooking_method": "Fry red curry paste in coconut oil for 2 mins until very fragrant, Add chicken stock and coconut milk and bring to a simmer, Add chicken breast and poach gently for 12 mins then remove and shred, Add fish sauce lime juice and a pinch of sugar and taste for balance, Cook rice noodles separately according to packet instructions then drain, Place noodles in deep bowls and ladle the broth over them, Top with shredded chicken bean sprouts and sliced spring onion, Finish with fresh coriander lime wedges and chili oil",
+      "ingredients": "rice noodles, chicken breast, red curry paste, coconut milk, chicken stock, fish sauce, lime, bean sprouts, spring onion, coriander",
+      "prep_time": "25 mins", "serves": "4", "tags": "thai, soup, noodles, quick",
+      "image": "https://www.themealdb.com/images/media/meals/118oj61763423896.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 48,
+    "fields": {
+      "recipe_name": "Tandoori Chicken", "cuisine": "Indian",
+      "cooking_method": "Score chicken pieces deeply with a knife so marinade penetrates to the bone, Mix yogurt with tandoori spice lemon juice garlic and ginger into a thick marinade, Coat chicken completely and refrigerate for at least 2 hours or overnight, Bring chicken to room temperature for 30 mins before cooking, Grill on a high heat bbq or under a very hot broiler for 8 mins per side, The edges should char and blacken slightly — that char is essential, Rest for 5 mins before serving, Serve with sliced onion fresh coriander lemon wedges and naan",
+      "ingredients": "chicken pieces, yogurt, tandoori spice, lemon, garlic, ginger, onion, fresh coriander, naan",
+      "prep_time": "2 hrs 30 mins", "serves": "4", "tags": "indian, chicken, grilled, classic",
+      "image": "https://www.themealdb.com/images/media/meals/qptpvt1487339892.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 49,
+    "fields": {
+      "recipe_name": "Pad See Ew", "cuisine": "Thai",
+      "cooking_method": "Soak wide rice noodles in cold water for 30 mins then drain — do not use hot water, Mix soy sauce dark soy sauce oyster sauce and sugar in a bowl, Heat wok over maximum heat until smoking then add oil, Add chicken and sear for 2 mins then push to the side, Crack egg into the wok and scramble quickly, Add noodles and press flat against the hot wok for 1 min to get some char, Toss everything together and pour sauce around the edges, Add Chinese broccoli and toss for 1 more min, Serve immediately with white pepper and chili vinegar on the side",
+      "ingredients": "wide rice noodles, chicken, eggs, Chinese broccoli, soy sauce, dark soy sauce, oyster sauce, sugar, white pepper",
+      "prep_time": "35 mins", "serves": "2", "tags": "thai, noodles, quick, street food",
+      "image": "https://www.themealdb.com/images/media/meals/uuuspp1468263334.jpg"
+    }
+  },
+  {
+    "model": "recipes.recipe", "pk": 50,
+    "fields": {
+      "recipe_name": "Baingan Bharta", "cuisine": "Indian",
+      "cooking_method": "Char the eggplant directly over a gas flame turning with tongs until completely blackened, Let cool then peel and roughly mash the smoky flesh, Fry onion in oil until deep golden then add garlic ginger and cook for 2 mins, Add tomatoes and cook until they break down completely, Add cumin coriander turmeric and chili and stir for 1 min, Fold in the mashed eggplant and cook for 5 mins stirring occasionally, Season with salt and add a squeeze of lemon, Finish with fresh coriander and serve with warm roti",
+      "ingredients": "eggplant, onion, tomatoes, garlic, ginger, cumin, coriander, turmeric, chili, fresh coriander, lemon, oil",
+      "prep_time": "30 mins", "serves": "4", "tags": "indian, vegetarian, vegan, smoky",
+      "image": "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg"
+    }
+  }
+]
