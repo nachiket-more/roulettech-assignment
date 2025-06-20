@@ -1,7 +1,6 @@
-import *  as React from "react";
+import * as React from "react";
 import './RecipeCard.css';
 import { useNavigate } from 'react-router-dom';
-import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 
 const RecipeCard = ({ recipe }) => {
     const navigate = useNavigate();
@@ -10,15 +9,27 @@ const RecipeCard = ({ recipe }) => {
         navigate(`/recipe/${recipe.id}`, { state: { recipe_id: recipe.id } });
     };
 
+    const cuisines = Array.isArray(recipe.cuisine)
+        ? recipe.cuisine
+        : recipe.cuisine.split(',').map(c => c.trim());
+
     return (
-        <div className="recipe-card" onClick={handleClick}>
-            <div className="picture" style={{ backgroundImage: `url(${recipe.image})` }}>
+        <div className="rc-card" onClick={handleClick}>
+            <div className="rc-image-wrap">
+                <div className="rc-image" style={{ backgroundImage: `url(${recipe.image})` }} />
             </div>
-            <div className="info-section">
-                <div className="info">
-                    <div className="prep-time medium">prep time: {recipe.prep_time}</div>
+            <div className="rc-body">
+                <div className="rc-cuisine-row">
+                    {cuisines.map((c, i) => (
+                        <span key={i} className="rc-cuisine">{c}</span>
+                    ))}
                 </div>
-                <div className="name bold">{recipe.recipe_name}</div>
+                <div className="rc-name">{recipe.recipe_name}</div>
+                <div className="rc-meta">
+                    <span>{recipe.prep_time}</span>
+                    <span className="rc-dot" />
+                    <span>Serves {recipe.serves}</span>
+                </div>
             </div>
         </div>
     );

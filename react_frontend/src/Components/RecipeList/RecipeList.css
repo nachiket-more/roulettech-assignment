@@ -1,47 +1,187 @@
-.recipe-list-container {
+.rl-container {
+    background: #faf8f5;
+    min-height: 100vh;
+}
+
+/* ── Hero ── */
+.rl-hero {
+    background: rgba(114, 63, 95, 1);
+    padding: 60px 0 56px;
+}
+
+.rl-hero-inner {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 48px;
 }
 
-.recipe-header {
-    width: 100vw;
-    height: fit-content;
-    background-color: #e6e6e6;
+.rl-eyebrow {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(237, 182, 84, 0.9);
+    margin: 0 0 14px 0;
+    font-weight: bold;
+}
 
+.rl-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 16px 0;
+    max-width: 600px;
+}
+
+.rl-sub {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.75;
+    max-width: 540px;
+    margin: 0 0 28px 0;
+    font-style: italic;
+}
+
+.rl-search-wrap {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 50px 0;
-
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px 16px;
+    gap: 10px;
+    max-width: 400px;
+    border: 1px solid #e8e0d8;
 }
 
-.recipe-list {
-    min-height: 400px;
+.rl-search-icon {
+    width: 16px;
+    height: 16px;
+    color: #bbb;
+    flex-shrink: 0;
+}
+
+.rl-search {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    color: #2a2a2a;
+    width: 100%;
+}
+
+.rl-search::placeholder {
+    color: #ccc;
+}
+
+.rl-search-clear {
+    background: none;
+    border: none;
+    color: #bbb;
+    cursor: pointer;
+    font-size: 0.75rem;
+    padding: 0;
+    line-height: 1;
+}
+
+.rl-search-clear:hover {
+    color: #888;
+}
+
+/* ── Filters ── */
+.rl-filters-bar {
+    background: #faf8f5;
+    border-bottom: 1px solid #e8e0d8;
+    overflow-x: auto;
+}
+
+.rl-filters-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 48px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.rl-pill {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.78rem;
+    padding: 6px 16px;
+    border-radius: 2px;
+    border: 1px solid #ddd5cc;
+    background: transparent;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+
+.rl-pill:hover {
+    border-color: rgba(114, 63, 95, 0.5);
+    color: rgba(114, 63, 95, 1);
+}
+
+.rl-pill.active {
+    background: rgba(114, 63, 95, 1);
+    border-color: rgba(114, 63, 95, 1);
+    color: #fff;
+}
+
+/* ── Grid ── */
+.rl-grid-outer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 36px 48px 80px;
+}
+
+.rl-results-count {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.78rem;
+    color: #aaa;
+    margin: 0 0 24px 0;
+    letter-spacing: 0.03em;
+}
+
+.rl-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px 20px;
+}
+
+.rl-loader {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 300px;
 }
 
-.content {
-    width: 60%;
-    margin: 0 auto;
-    text-align: left;
+.rl-empty {
+    text-align: center;
+    color: #999;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    padding: 80px 0;
 }
 
-.heading {
-    font-size: 30px;
-    color: rgba(114, 63, 95, 0.9);
-    margin-bottom: 20px;
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+    .rl-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
-.sub-heading {
-    font-weight: 500;
-    color: #4d4d4d;
+@media (max-width: 768px) {
+    .rl-hero { padding: 40px 0; }
+    .rl-hero-inner { padding: 0 24px; }
+    .rl-title { font-size: 2.2rem; }
+    .rl-filters-inner { padding: 12px 24px; }
+    .rl-grid-outer { padding: 24px 24px 60px; }
+    .rl-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 14px; }
 }
 
-.recipe-list>.content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 100%;
+@media (max-width: 480px) {
+    .rl-grid { grid-template-columns: 1fr; }
 }
