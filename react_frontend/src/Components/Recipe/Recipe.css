@@ -1,62 +1,310 @@
-.recipe-container {
-    min-height: 400px;
+.rp-container {
+    background: #faf8f5;
+    min-height: 100vh;
+    padding-bottom: 80px;
+}
+
+.rp-loader-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 80vh;
 }
 
-.recipe {
-    margin: 100px auto;
-    background-color: var(--primary-color);
-    width: 50vw;
-    height: fit-content;
-    color: white;
-    position: relative;
-    padding: 75px 5px 5px 5px;
+/* ── Back bar ── */
+.rp-back-bar {
+    background: #faf8f5;
+    padding: 20px 0 0;
 }
 
-.recipe-container .image {
-    width: 150px;
-    height: 150px;
-    border: 5px solid var(--primary-color);
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    top: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.rp-back-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
 }
 
-.recipe-info {
+.rp-back {
     display: inline-flex;
-    gap: 20px;
-    margin-bottom: 2em;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    color: #aaa;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.82rem;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s;
+    font-style: italic;
 }
 
-.cuisine {
-    margin-bottom: 1em;
+.rp-back:hover {
+    color: rgba(114, 63, 95, 1);
 }
 
-.cuisine .cuisine-item {
-    background-color: var(--color3);
-    color: var(--primary-color);
-    padding: 4px 15px;
-    border-radius: 50px;
-    margin: 8px;
+.rp-back svg {
+    width: 14px;
+    height: 14px;
 }
 
-.detail-container {
-    height: fit-content;
-    background-color: white;
-    padding: 20px;
-    text-align: left;
-    color: black;
+/* ── Hero card ── */
+.rp-hero-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 48px 0;
 }
 
-.detail-container .title {
-    color: var(--secondary-color) !important;
+.rp-hero-card {
+    background: rgba(114, 63, 95, 1);
+    padding: 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* ── Circular image ── */
+.rp-circle-image-wrap {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid rgba(114, 63, 95, 1);
+    overflow: hidden;
+    margin-top: -50px;
+    background: rgba(114, 63, 95, 0.5);
+    flex-shrink: 0;
+}
+
+.rp-circle-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ── Title ── */
+.rp-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+    margin: 20px 0 14px;
+    line-height: 1.2;
+    max-width: 600px;
+}
+
+/* ── Cuisine tags ── */
+.rp-cuisine-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.rp-cuisine-tag {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.65rem;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(114, 63, 95, 1);
+    background: rgba(237, 182, 84, 0.95);
+    padding: 3px 12px;
+    border-radius: 50px;
+}
+
+/* ── Gold divider ── */
+.rp-gold-divider {
+    width: 60px;
+    height: 2px;
+    background: rgba(237, 182, 84, 0.7);
+    margin-bottom: 24px;
+}
+
+/* ── Meta row ── */
+.rp-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rp-meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 28px;
+}
+
+.rp-meta-divider {
+    width: 1px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+}
+
+.rp-meta-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.58rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgba(237, 182, 84, 0.8);
+    margin-bottom: 4px;
+}
+
+.rp-meta-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ── Body ── */
+.rp-body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 48px 0;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+/* ── Left panel ── */
+.rp-left {
+    position: sticky;
+    top: 24px;
+}
+
+.rp-section-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(114, 63, 95, 1);
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(114, 63, 95, 1);
+}
+
+.rp-ingredients {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rp-ingredient {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ede8e0;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.88rem;
+    color: #2a2a2a;
+    text-transform: capitalize;
+}
+
+.rp-ingredient-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgb(237, 182, 84);
+    flex-shrink: 0;
+}
+
+.rp-tags-block {
+    margin-top: 32px;
+}
+
+.rp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.rp-tag {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 2px;
+    background: #f0eae6;
+    color: #888;
+    text-transform: capitalize;
+}
+
+/* ── Right panel ── */
+.rp-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.rp-step {
+    padding: 24px 0;
+    border-bottom: 1px solid #ede8e0;
+    display: flex;
+    gap: 20px;
+}
+
+.rp-step:last-child {
+    border-bottom: none;
+}
+
+.rp-step-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.rp-step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
+    background: rgba(114, 63, 95, 1);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1.5px solid rgba(114, 63, 95, 1);
+}
+
+.rp-step-line {
+    flex: 1;
+    height: 1px;
+    background: #e8e0d8;
+}
+
+.rp-step-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    color: #2a2a2a;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .rp-hero-wrap { padding: 32px 24px 0; }
+    .rp-back-inner { padding: 0 24px; }
+    .rp-title { font-size: 1.7rem; }
+    .rp-body {
+        grid-template-columns: 1fr;
+        padding: 32px 24px 0;
+        gap: 40px;
+    }
+    .rp-left { position: static; }
+    .rp-meta-item { padding: 0 16px; }
 }
