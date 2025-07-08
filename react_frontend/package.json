@@ -42,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://recipe-django-env.eba-udmkdzi6.us-east-1.elasticbeanstalk.com/"
+  "proxy": "http://127.0.0.1:8000"
 }
