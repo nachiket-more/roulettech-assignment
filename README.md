@@ -1,103 +1,112 @@
 ﻿# Web App for Quick and Easy Recipes
 
 ## Description
-A web app focused on quick and easy recipes.
-- ***main***: main project files
-- ***django-backend:*** deployment branch for django
-- ***React-frontend:*** deployment branch for react
+A full-stack recipe web app focused on quick and easy meals. Originally built and deployed on AWS (S3, Elastic Beanstalk, DynamoDB, CodePipeline), later migrated to a free stack to keep it live after AWS free tier expiry.
+
+- **main** - main project files
+- **django-backend** - deployment branch for Django
+- **react-frontend** - deployment branch for React
+
+## Live Demo
+- **Frontend:** 
+- **Backend API:** 
 
 ## Features
-- List of recipes
-- Detailed view of each recipe
+- Browse 50+ quick and easy recipes across 15+ cuisines
+- Real-time search by recipe name
+- Filter recipes by cuisine
+- Detailed recipe view with ingredients, step-by-step instructions, prep time and serving info
+- Responsive design across all devices
 
 ## Technologies Used
-- **Frontend:** React
-- **Backend:** Django
-- **Deployment & Infrastructure:** AWS S3, DynamoDB, CodePipeline, Elastic Beanstalk
-
-## URLs
-- **Frontend:** http://recipe-react.s3-website.us-east-1.amazonaws.com/
-- **Backend API:** http://django-env.eba-ehdx2drn.us-east-1.elasticbeanstalk.com/
+- **Frontend:** React, Tailwind CSS, React Router
+- **Backend:** Django, Django REST Framework
+- **Database:** SQLite (development) → PostgreSQL via Supabase (production)
+- **Original Deployment:** AWS S3, DynamoDB, Elastic Beanstalk, CodePipeline
+- **Current Deployment:** Vercel (frontend), Render (backend)
 
 ## Architecture Overview
 
-### Frontend Tier
-- **AWS S3:** Hosts the React app's build files.
-- **AWS CodePipeline:** Connects to the React GitHub repository for CI/CD.
-- **Functionality:** The frontend calls the backend API to fetch recipe data.
+### Original AWS Architecture
+- **AWS S3** - hosted the React build files
+- **AWS Elastic Beanstalk** - deployed the Django backend
+- **AWS CodePipeline** - CI/CD pipeline connected to GitHub for both frontend and backend
+- **DynamoDB** - stored recipe data
 
-### Backend Tier
-- **AWS Elastic Beanstalk:** Deploys the Django backend app.
-- **AWS CodePipeline:** Connects to GitHub for automated deployments to Elastic Beanstalk.
-- **Functionality:** The backend fetches recipe data from DynamoDB when an API is called.
-
-### Database Tier
-- **DynamoDB:** Stores recipe data.
-
+### Current Architecture
+- **Vercel** - hosts the React frontend
+- **Render** - hosts the Django backend
+- **Supabase (PostgreSQL)** - stores recipe data in production
+- **SQLite** - used for local development
 
 ## Installation Instructions
-### Prerequisites: 
-Software and tools required are Nodejs, npm, Python
 
-### Frontend (React App)
+### Prerequisites
+Node.js, npm, Python 3.x, pip
 
-1. **Clone the Repository:**
-    ```bash
-    git clone https://github.com/nachiket-more/roulettech-assignment
-    ```
+### Frontend (React)
 
-2. **Navigate to the Frontend Directory:**
-    ```bash
-    cd roulettech-assignment/react_frontend
-    ```
+1. Clone the repository:
+```bash
+    git clone https://github.com/nachiket-more99/recipe-web-app
+```
 
-3. **Install Dependencies:**
-    ```bash
+2. Navigate to the frontend directory:
+```bash
+    cd recipe-web-app/react_frontend
+```
+
+3. Install dependencies:
+```bash
     npm install
-    ```
+```
 
-4. **Start the Development Server:**
-    ```bash
+4. Start the development server:
+```bash
     npm start
-    ```
+```
 
-### Backend (Django App)
+### Backend (Django)
 
-1. ***Navigate to the Backend Directory:***
-    ```bash
-    cd roulettech-assignment/django_backend
-    ```
+1. Navigate to the backend directory:
+```bash
+    cd recipe-web-app/django_backend
+```
 
-2. ***Install Dependencies: Install the required Python packages using pip:***
-    ```bash
+2. Install dependencies:
+```bash
     pip install -r requirements.txt
-    ```
+```
 
-3. ***Start the Django development server:***
-    ```bash
+3. Run migrations:
+```bash
+    python manage.py migrate
+```
+
+4. Load seed data:
+```bash
+    python manage.py loaddata recipes/fixtures/recipes_seed.json
+```
+
+5. Start the development server:
+```bash
     python manage.py runserver
-    ```
-    This will require 'AWS_ACCESS_KEY_ID' and 'AWS_SECRET_ACCESS_KEY' as env variables or in settings.py to have access to the Dynamodb 
+```
 
-## Endpoints
-Below is a list of the available API endpoints for the backend (Django app). These endpoints allow the frontend (React app) to interact with the backend.
+## API Endpoints
 
-1. **/recipes/ (GET)**
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/recipes/` | Returns list of all recipes |
+| GET | `/api/recipe/{id}/` | Returns details of a specific recipe |
 
-    Fetches a list of all recipes stored in DynamoDB.
-    ```bash
-    GET http://localhost:8000/api/recipes/
-    ```
-
-2. **/recipe/{id}/ (GET)**
-
-    Fetches the details of a specific recipe by ID.
-    ```bash
-    GET http://localhost:8000/api/recipe/1/
-    ```
-
+**Example:**
+```bash
+GET http://localhost:8000/api/recipes/
+GET http://localhost:8000/api/recipe/1/
+```
 
 ## References
-- https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html#python-django-deploy
+- https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html
 - https://faun.pub/how-to-create-cicd-using-github-as-source-and-elastic-beanstalk-244319a2a350
 - https://plainenglish.io/community/how-to-host-your-react-application-in-aws-s3-e9969d
