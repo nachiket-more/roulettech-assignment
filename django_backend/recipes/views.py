@@ -1,5 +1,6 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.decorators import api_view
 from rest_framework import status
 from django.http import HttpResponse
 from .models import Recipe
@@ -26,3 +27,8 @@ class RecipeDetail(APIView):
             return Response(serializer.data)
         except Recipe.DoesNotExist:
             return Response({'error': 'Recipe not found'}, status=status.HTTP_404_NOT_FOUND)
+
+
+@api_view(['GET'])
+def health_check(request):
+    return Response({'status': 'ok'})
