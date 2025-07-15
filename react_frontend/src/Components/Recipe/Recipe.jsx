@@ -11,7 +11,7 @@ const Recipe = () => {
 
     useEffect(() => {
         if (recipe_id) {
-            fetch(`http://127.0.0.1:8000/api/recipe/${recipe_id}/`)
+            fetch(`${process.env.REACT_APP_API_URL}/api/recipe/${recipe_id}/`)
                 .then(response => response.json())
                 .then(data => setRecipeData(data))
                 .catch(error => console.log(error));

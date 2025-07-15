@@ -9,7 +9,7 @@ const RecipeList = () => {
     const [activeFilter, setActiveFilter] = React.useState('All');
 
     React.useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/recipes/')
+        fetch(`${process.env.REACT_APP_API_URL}/api/recipes/`)
             .then(response => response.json())
             .then(data => setRecipeList(data))
             .catch(error => console.log(error));
